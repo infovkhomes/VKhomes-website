@@ -125,7 +125,7 @@ export default function ContactSection() {
                   />
                 </div>
 
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+                <div className="form-row-2">
                   <div className="form-group">
                     <label className="form-label" style={{ color: '#334155' }}>Phone Number *</label>
                     <input 
