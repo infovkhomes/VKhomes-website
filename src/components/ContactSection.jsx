@@ -53,7 +53,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="contact-info-title">Call Us Directly</h4>
                   <p className="contact-info-text">
-                    <a href="tel:+94713258259">+94 71 325 8259</a><br />
+                    <a href="tel:+94713258258">+94 71 325 8258</a><br />
                     <a href="tel:+94773555770">+94 77 355 5770</a>
                   </p>
                 </div>

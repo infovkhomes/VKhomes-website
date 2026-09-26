@@ -5,7 +5,7 @@ export default function FloatingWidget() {
   return (
     <div className="floating-widget">
       <a 
-        href="https://wa.me/94713258259" 
+        href="https://wa.me/94713258258" 
         target="_blank" 
         rel="noopener noreferrer" 
         className="floating-btn floating-btn-wa"
@@ -16,12 +16,12 @@ export default function FloatingWidget() {
       </a>
 
       <a 
-        href="tel:+94713258259" 
+        href="tel:+94713258258" 
         className="floating-btn floating-btn-call"
         aria-label="Call VK Homes Construction"
       >
         <PhoneCall size={24} />
-        <span className="floating-tooltip">Call +94 71 325 8259</span>
+        <span className="floating-tooltip">Call +94 71 325 8258</span>
       </a>
     </div>
   );

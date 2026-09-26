@@ -6,9 +6,9 @@ export default function TopBar() {
     <div className="top-bar">
       <div className="container top-bar-content">
         <div className="top-bar-info">
-          <a href="tel:+94713258259" className="top-bar-item">
+          <a href="tel:+94713258258" className="top-bar-item">
             <Phone size={14} />
-            <span>+94 71 325 8259</span>
+            <span>+94 71 325 8258</span>
           </a>
           <a href="tel:+94773555770" className="top-bar-item">
             <Phone size={14} />

@@ -43,7 +43,7 @@ export default function Footer({ onOpenQuoteModal }) {
             </p>
             <p style={{ fontSize: '0.9rem', color: '#CBD5E1', marginBottom: '0.5rem' }}>
               <Phone size={16} style={{ color: '#00D2FF', display: 'inline', marginRight: '6px' }} />
-              <a href="tel:+94713258259" style={{ color: '#FFFFFF', textDecoration: 'none' }}>+94 71 325 8259</a>
+              <a href="tel:+94713258258" style={{ color: '#FFFFFF', textDecoration: 'none' }}>+94 71 325 8258</a>
             </p>
             <p style={{ fontSize: '0.9rem', color: '#CBD5E1', marginBottom: '1.25rem' }}>
               <Phone size={16} style={{ color: '#00D2FF', display: 'inline', marginRight: '6px' }} />

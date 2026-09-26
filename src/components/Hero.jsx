@@ -15,7 +15,7 @@ export default function Hero({ onOpenQuoteModal }) {
     setSubmitted(true);
     setTimeout(() => {
       const text = `Hi VK Homes! My name is ${formData.name}. Phone: ${formData.phone}. Service Needed: ${formData.projectType}. Details: ${formData.message}`;
-      const url = `https://wa.me/94713258259?text=${encodeURIComponent(text)}`;
+      const url = `https://wa.me/94713258258?text=${encodeURIComponent(text)}`;
       window.open(url, '_blank');
     }, 800);
   };
@@ -40,14 +40,14 @@ export default function Hero({ onOpenQuoteModal }) {
               <ArrowRight size={18} />
             </button>
 
-            <a href="https://wa.me/94713258259" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
+            <a href="https://wa.me/94713258258" target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
               <MessageSquare size={18} />
               <span>WhatsApp Us</span>
             </a>
 
-            <a href="tel:+94713258259" className="btn btn-outline-white">
+            <a href="tel:+94713258258" className="btn btn-outline-white">
               <PhoneCall size={18} />
-              <span>+94 71 325 8259</span>
+              <span>+94 71 325 8258</span>
             </a>
           </div>
 
@@ -92,7 +92,7 @@ export default function Hero({ onOpenQuoteModal }) {
                 <input 
                   type="tel" 
                   className="form-input" 
-                  placeholder="e.g. 071 325 8259" 
+                  placeholder="e.g. 071 325 8258" 
                   required 
                   value={formData.phone}
                   onChange={(e) => setFormData({...formData, phone: e.target.value})}

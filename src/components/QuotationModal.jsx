@@ -19,7 +19,7 @@ export default function QuotationModal({ isOpen, onClose }) {
     setSubmitted(true);
     setTimeout(() => {
       const msg = `*VK HOMES QUOTATION INQUIRY*\nName: ${formData.name}\nPhone: ${formData.phone}\nEmail: ${formData.email || 'N/A'}\nService: ${formData.service}\nApprox. Sq Ft: ${formData.areaSqFt || 'Not specified'}\nDetails: ${formData.details || 'None'}`;
-      const url = `https://wa.me/94713258259?text=${encodeURIComponent(msg)}`;
+      const url = `https://wa.me/94713258258?text=${encodeURIComponent(msg)}`;
       window.open(url, '_blank');
     }, 600);
   };
@@ -69,7 +69,7 @@ export default function QuotationModal({ isOpen, onClose }) {
                   <input 
                     type="tel" 
                     className="form-input form-input-light" 
-                    placeholder="+94 71 325 8259" 
+                    placeholder="+94 71 325 8258" 
                     required 
                     value={formData.phone}
                     onChange={(e) => setFormData({...formData, phone: e.target.value})}
