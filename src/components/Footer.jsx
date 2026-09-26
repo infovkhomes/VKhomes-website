@@ -1,17 +1,17 @@
 import React from 'react';
-import { MapPin, Phone, ShieldCheck } from 'lucide-react';
+import { MapPin, Phone, Mail, ShieldCheck } from 'lucide-react';
 
 export default function Footer({ onOpenQuoteModal }) {
   return (
     <footer className="site-footer">
       <div className="container">
-        <div className="footer-grid" style={{ gridTemplateColumns: '1.5fr 1.2fr 1.3fr' }}>
+        <div className="footer-grid">
           <div className="footer-brand">
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
-              <img src="/logo.png" alt="VK Homes Logo" style={{ height: '48px', width: 'auto', background: '#FFFFFF', padding: '4px', borderRadius: '8px' }} />
+              <img src="/logo.png" alt="VK Homes Logo" style={{ height: '44px', width: 'auto', background: '#FFFFFF', padding: '4px', borderRadius: '8px' }} />
               <div>
-                <h3 style={{ color: '#FFFFFF', margin: 0, fontSize: '1.3rem' }}>VK HOMES</h3>
-                <span style={{ color: '#0060E6', fontSize: '0.75rem', fontWeight: 700, letterSpacing: '0.1em' }}>& CONSTRUCTIONS (PVT) LTD</span>
+                <h3 style={{ color: '#FFFFFF', margin: 0, fontSize: '1.2rem' }}>VK HOMES</h3>
+                <span style={{ color: '#0060E6', fontSize: '0.7rem', fontWeight: 700, letterSpacing: '0.1em' }}>& CONSTRUCTIONS (PVT) LTD</span>
               </div>
             </div>
             <p>
@@ -37,17 +37,21 @@ export default function Footer({ onOpenQuoteModal }) {
 
           <div>
             <h4 className="footer-col-title">Office Location</h4>
-            <p style={{ fontSize: '0.9rem', color: '#CBD5E1', marginBottom: '1rem', lineHeight: '1.6' }}>
-              <MapPin size={16} style={{ color: '#00D2FF', display: 'inline', marginRight: '6px' }} />
+            <p style={{ fontSize: '0.875rem', color: '#CBD5E1', marginBottom: '1rem', lineHeight: '1.6' }}>
+              <MapPin size={16} style={{ color: '#00D2FF', display: 'inline', marginRight: '6px', flexShrink: 0 }} />
               286 Veterinary Surgon Mawatha, Aluthgama Road, Elpitiya, 80400, Sri Lanka.
             </p>
-            <p style={{ fontSize: '0.9rem', color: '#CBD5E1', marginBottom: '0.5rem' }}>
+            <p style={{ fontSize: '0.875rem', color: '#CBD5E1', marginBottom: '0.5rem' }}>
               <Phone size={16} style={{ color: '#00D2FF', display: 'inline', marginRight: '6px' }} />
               <a href="tel:+94713258258" style={{ color: '#FFFFFF', textDecoration: 'none' }}>+94 71 325 8258</a>
             </p>
-            <p style={{ fontSize: '0.9rem', color: '#CBD5E1', marginBottom: '1.25rem' }}>
+            <p style={{ fontSize: '0.875rem', color: '#CBD5E1', marginBottom: '0.5rem' }}>
               <Phone size={16} style={{ color: '#00D2FF', display: 'inline', marginRight: '6px' }} />
               <a href="tel:+94773555770" style={{ color: '#FFFFFF', textDecoration: 'none' }}>+94 77 355 5770</a>
+            </p>
+            <p style={{ fontSize: '0.875rem', color: '#CBD5E1', marginBottom: '1.25rem', wordBreak: 'break-all' }}>
+              <Mail size={16} style={{ color: '#00D2FF', display: 'inline', marginRight: '6px' }} />
+              <a href="mailto:info.vkhomesconstruction@gmail.com" style={{ color: '#FFFFFF', textDecoration: 'none' }}>info.vkhomesconstruction@gmail.com</a>
             </p>
 
             <button className="btn btn-primary" style={{ width: '100%' }} onClick={onOpenQuoteModal}>

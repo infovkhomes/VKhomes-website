@@ -656,7 +656,7 @@
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
-  gap: 3rem;
+  gap: 2.5rem;
   width: 100%;
 }
 
@@ -664,10 +664,19 @@
   background: linear-gradient(135deg, var(--primary-deep) 0%, #061124 100%);
   color: #FFFFFF;
   border-radius: var(--radius-lg);
-  padding: 2.5rem 2rem;
+  padding: 2.25rem 1.75rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+}
+
+.contact-form-box {
+  background: #F8FAFC;
+  padding: 2.25rem 1.75rem;
+  border-radius: 24px;
+  border: 1px solid #E2E8F0;
+  width: 100%;
 }
 
 .contact-info-item {
@@ -916,8 +925,9 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  .contact-info-card {
-    padding: 1.75rem 1.25rem;
+  .contact-info-card, .contact-form-box {
+    padding: 1.5rem 1.15rem;
+    border-radius: 16px;
   }
   .floating-widget {
     bottom: 1rem;
