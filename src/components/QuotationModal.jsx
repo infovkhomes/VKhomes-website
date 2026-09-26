@@ -26,27 +26,27 @@ export default function QuotationModal({ isOpen, onClose }) {
 
   return (
     <div className="modal-backdrop" onClick={onClose}>
-      <div className="modal-content" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '600px' }}>
-        <button className="modal-close-btn" onClick={onClose}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <button className="modal-close-btn" onClick={onClose} aria-label="Close quote modal">
           <X size={20} />
         </button>
 
-        <div style={{ padding: '2.5rem' }}>
-          <div className="badge-pill badge-blue" style={{ marginBottom: '0.75rem' }}>
+        <div className="modal-body">
+          <div className="badge-pill badge-blue" style={{ marginBottom: '0.6rem' }}>
             Get Quotation
           </div>
-          <h2 style={{ fontSize: '1.75rem', color: '#0F172A', marginBottom: '0.5rem' }}>
-            Request Your Free Project Estimate
+          <h2 style={{ fontSize: '1.6rem', color: '#0F172A', marginBottom: '0.4rem' }}>
+            Request Free Estimate
           </h2>
-          <p style={{ color: '#64748B', fontSize: '0.95rem', marginBottom: '1.75rem' }}>
-            Fill out your project details below. Our engineering team will contact you within 24 hours.
+          <p style={{ color: '#64748B', fontSize: '0.9rem', marginBottom: '1.25rem' }}>
+            Fill out your details below. Our team will get back to you promptly.
           </p>
 
           {submitted ? (
-            <div style={{ textAlign: 'center', padding: '2rem 0', color: '#10B981' }}>
-              <CheckCircle2 size={60} style={{ margin: '0 auto 1rem' }} />
-              <h3 style={{ fontSize: '1.5rem', color: '#0F172A', marginBottom: '0.5rem' }}>Quotation Request Sent!</h3>
-              <p style={{ color: '#64748B', marginBottom: '1.5rem' }}>Redirecting to WhatsApp to chat directly with our team...</p>
+            <div style={{ textAlign: 'center', padding: '1.5rem 0', color: '#10B981' }}>
+              <CheckCircle2 size={54} style={{ margin: '0 auto 0.75rem' }} />
+              <h3 style={{ fontSize: '1.35rem', color: '#0F172A', marginBottom: '0.4rem' }}>Quotation Request Sent!</h3>
+              <p style={{ color: '#64748B', marginBottom: '1.25rem', fontSize: '0.9rem' }}>Redirecting to WhatsApp to chat directly with our engineering team...</p>
               <button className="btn btn-outline" onClick={onClose}>Done</button>
             </div>
           ) : (
@@ -57,7 +57,7 @@ export default function QuotationModal({ isOpen, onClose }) {
                   <input 
                     type="text" 
                     className="form-input form-input-light" 
-                    placeholder="John Perera" 
+                    placeholder="e.g. John Perera" 
                     required 
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
@@ -107,20 +107,22 @@ export default function QuotationModal({ isOpen, onClose }) {
               </div>
 
               <div className="form-group">
-                <label className="form-label" style={{ color: '#334155' }}>Project Details / Specific Notes</label>
+                <label className="form-label" style={{ color: '#334155' }}>Project Details (Optional)</label>
                 <textarea 
                   className="form-textarea form-textarea-light" 
-                  rows="3" 
-                  placeholder="Tell us about land condition, number of bedrooms, pool dimensions, or timeline..."
+                  rows="2" 
+                  placeholder="Tell us about your building requirements or timeline..."
                   value={formData.details}
                   onChange={(e) => setFormData({...formData, details: e.target.value})}
                 ></textarea>
               </div>
 
-              <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
-                <Send size={18} />
-                <span>Submit Quotation Request</span>
-              </button>
+              <div style={{ marginTop: '1.25rem', marginBottom: '0.5rem' }}>
+                <button type="submit" className="btn btn-primary" style={{ width: '100%' }}>
+                  <Send size={18} />
+                  <span>Submit Quotation Request</span>
+                </button>
+              </div>
             </form>
           )}
         </div>
