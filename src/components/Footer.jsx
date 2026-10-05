@@ -17,9 +17,15 @@ export default function Footer({ onOpenQuoteModal }) {
             <p>
               Leading trusted construction company. Turning clients' ideas into quality homes, swimming pools, commercial structures, and civil works through professional workmanship and reliable service.
             </p>
-            <div className="badge-pill badge-white">
-              <ShieldCheck size={14} />
-              <span>We Build Your House</span>
+            <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
+              <div className="badge-pill badge-white">
+                <ShieldCheck size={14} />
+                <span>We Build Your House</span>
+              </div>
+              <div className="badge-pill badge-gold">
+                <ShieldCheck size={14} />
+                <span>CIDA Reg No: C-25271</span>
+              </div>
             </div>
           </div>
 

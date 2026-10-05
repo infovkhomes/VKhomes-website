@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, ShieldCheck } from 'lucide-react';
 
 export default function TopBar() {
   return (
@@ -22,6 +22,11 @@ export default function TopBar() {
             <MapPin size={14} />
             <span>Elpitiya, Sri Lanka</span>
           </span>
+        </div>
+
+        <div className="top-bar-badge">
+          <ShieldCheck size={14} />
+          <span>CIDA Reg: C-25271</span>
         </div>
       </div>
     </div>
